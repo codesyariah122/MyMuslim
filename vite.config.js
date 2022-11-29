@@ -6,7 +6,7 @@ export default defineConfig({
     port: 3030,
   },
   build: {
-    outdir: "./public/",
+    outdir: "./src/dist/",
   },
   root: "./src/",
   plugins: [
