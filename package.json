@@ -17,6 +17,8 @@
   "dependencies": {
     "@rollup/plugin-inject": "^5.0.2",
     "flowbite": "^1.5.4",
-    "jquery": "^3.6.1"
+    "global": "^4.4.0",
+    "jquery": "^3.6.1",
+    "vercel": "^28.6.0"
   }
 }

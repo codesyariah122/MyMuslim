@@ -5,9 +5,9 @@ export default defineConfig({
   server: {
     port: 3030,
   },
-  build: {
-    outdir: "./dist/",
-  },
+  // build: {
+  //   outdir: "./dist/",
+  // },
   root: "./src/",
   plugins: [
     inject({
