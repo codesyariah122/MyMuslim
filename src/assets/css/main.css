@@ -11,6 +11,11 @@
     }
     .hero__section-mobile .col__hero-context h1{
         font-family: 'Sarina', cursive;
+        line-height: 50px;
+    }
+    .hero__section-mobile .col__hero-context h3{
+        font-family: 'Poppins', sans-serif;
+        line-height: 50px;
     }
     .hero__content-mobile .col__hero-vector-1 .vector-1 {
         margin-left: -1rem;
