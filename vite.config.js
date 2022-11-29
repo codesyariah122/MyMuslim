@@ -7,10 +7,5 @@ export default defineConfig({
   },
 
   root: "./src/",
-  plugins: [
-    inject({
-      $: "jquery",
-      jQuery: "jquery",
-    }),
-  ],
+  plugins: [],
 });
