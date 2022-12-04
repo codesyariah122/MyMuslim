@@ -20,6 +20,7 @@ const selectorData = {
     el: document.getElementById("user-prayer-time"),
     classes: [
       "md:col-span-2",
+      "lg:col-span-2",
       "col-span-full",
       "w-80",
       "md:w-full",

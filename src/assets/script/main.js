@@ -18,15 +18,6 @@ const xRapidHost = "aladhan.p.rapidapi.com";
 let ip = localStorage.getItem("user-ip")
   ? JSON.parse(localStorage.getItem("user-ip"))
   : null;
-let userData = localStorage.getItem("user-data")
-  ? JSON.parse(localStorage.getItem("user-data"))
-  : null;
-const objectDataLocation = {
-  country: userData.country_name,
-  city: userData.city,
-};
-const token = "xaxbbczczaaxaa";
-const endpoint = `https://islamic-api-collect.vercel.app/api/islamic/v1/${token}/${objectDataLocation.country}/${objectDataLocation.city}/day`;
 // end assign
 
 selectorClass(selectorData);
@@ -48,4 +39,16 @@ userGeoLocation(apiKeyGeo)
   })
   .catch((err) => console.log(err));
 
-fetchPrayerApi(endpoint, userData, objectDataLocation);
+setTimeout(() => {
+  let userData = localStorage.getItem("user-data")
+    ? JSON.parse(localStorage.getItem("user-data"))
+    : null;
+  const objectDataLocation = {
+    country: userData.country_name,
+    city: userData.city,
+  };
+  const token = "xaxbbczczaaxaa";
+  const endpoint = `https://islamic-api-collect.vercel.app/api/islamic/v1/${token}/${objectDataLocation.country}/${objectDataLocation.city}/day`;
+
+  fetchPrayerApi(endpoint, userData, objectDataLocation);
+}, 2500);
