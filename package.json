@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@rollup/plugin-inject": "^5.0.2",
+    "axios": "^1.2.0",
     "flowbite": "^1.5.4",
     "global": "^4.4.0",
     "jquery": "^3.6.1",

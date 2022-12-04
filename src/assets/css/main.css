@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Bubbles&family=Sarina&display=swap');
+
 @media screen and (max-width: 745px) {
     .hero__content-desktop {
         display: none;
@@ -28,9 +29,6 @@
         margin-right: -1rem;
         margin-top: -2rem;
     }
-    /* .hero__content-mobile .col__hero-vector-2 .vector-leaf img {
-        margin-top: -30rem;
-    } */
 }
 
 @media(min-width: 992px) {
@@ -40,24 +38,27 @@
     .hero__content-mobile {
         display: none;
     }
-    .hero__section {
+    .hero__section-desktop {
         background-color: #dfc220;
     }
-    .hero__section .col__hero-context {
+    .hero__section-desktop .col__hero-context {
         margin-top:2rem;
     }
-    .hero__section .col__hero-context h1{
+    .hero__section-desktop .col__hero-context h1{
         font-family: 'Sarina', cursive;
         margin-left: -7rem;
-        line-height: 75px;
+        line-height: 80px;
     }
-    .hero__section .col__hero-context h3{
+    .hero__section-desktop .col__hero-context h3{
         font-family: 'Poppins', sans-serif;
         margin-top: 1rem;
         margin-left: 8.7rem;
     }
-    .hero__section .col__hero-vector1 img {
+    .hero__section-desktop .col__hero-vector1 img {
         margin-left: -1.5rem;
+    }
+    .hero__section-desktop .col__hero-context .col__context-vector1 img {
+        margin-top: 2.2rem;
     }
 
     .col__hero-vector2 .vector-1 img{
@@ -67,5 +68,8 @@
     .col__hero-vector2 .vector-2 img {
         margin-top: -4rem;
         margin-left: 1rem;
+    }
+    .main__content{
+        margin-top: 2rem;
     }
 }
