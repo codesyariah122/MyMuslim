@@ -75,13 +75,14 @@ export async function fetchPrayerApi(endpoint, data, location) {
       let date = new Date().getDate();
       const day = date <= 10 ? `0${date}` : toString(date);
       const allData = dataContent.map((d) => d);
+      console.log(allData);
       // const basedOnToday = allData.filter((d) => {
       //   if (d.date.gregorian.day === day) {
       //     return d;
       //   }
       // });
 
-      handleResponse(allData, "prayer-time", location);
+      handleResponse(allD, "prayer-time", location);
     })
     .catch((err) => console.log(err));
 }

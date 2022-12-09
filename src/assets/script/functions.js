@@ -1,6 +1,3 @@
-import { all } from "axios";
-import { selectorData } from "./selectorData";
-
 export function detectAgent() {
   if (
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
